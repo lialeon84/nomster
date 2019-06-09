@@ -7,7 +7,7 @@
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 15px;
   padding: 20px;
 }
@@ -19,11 +19,18 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background: image_url('restaurant_icons.png');
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-family: 'Baloo Da', cursive;
 }
 
 .navbar {
   background: image_url('restaurant.png');
   box-shadow: 10px 10px 5px #D2D0CF;
+
+}
+
+.navbar-inverse .navbar-brand {
+  color: #CFD1D2;
+  font-family: 'Baloo Da', cursive;
+  font-size:26px;
 }
 
