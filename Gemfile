@@ -73,6 +73,8 @@ end
 
 gem "font-awesome-rails"
 
+end
+
 gem 'simple_form'
 
 
