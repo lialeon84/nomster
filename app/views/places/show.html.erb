@@ -4,18 +4,8 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      }
-    #map {
-      height: 100%;
-    }
-  </style>
   
-
+  
   <% if @place.latitude.present? && @place.longitude.present? %>
 
   <script>
@@ -38,7 +28,7 @@
   </script>
 
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=API_KEY=AIzaSyDl-rgfhCS1MNiChG3tq0PTFeuh0pnvqd0">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl-rgfhCS1MNiChG3tq0PTFeuh0pnvqd0&callback=initMap">
   
   </script>
 
@@ -61,7 +51,12 @@
   </div>
 
 </div>
-
+<div class="clear"></div>
+<%= simple_form_for @comment, url: '#' do |f| %>
+  <%= f.input :message %>
+  <%= f.input :rating %>
+  <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+<% end %>
 
 
 
