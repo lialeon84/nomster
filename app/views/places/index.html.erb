@@ -22,19 +22,6 @@
   
 
 <% end %>
-
-<div class="row">
- <% @place.photos.each do |photo| %>
-  <%= image_tag photo.picture.url %>
-    <div class="col-12 col-sm-6">
-
-      <%= place.photo.caption %>
-      <small><%= place.photo.user.email %></small>
-    
-    </div>
-
-
-
 </div>
 
 <% end %>
